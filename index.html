@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kier Bica</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      padding: 40px 16px 60px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      background: #333;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 40px;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+    }
+
+    .profile h1 {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .profile p {
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #888;
+      margin: 32px 0 12px;
+      text-align: center;
+    }
+
+    .link-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 20px;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+    }
+
+    .link-btn:hover {
+      background: #252525;
+      border-color: #444;
+      transform: translateY(-1px);
+    }
+
+    .link-btn .icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .link-btn .text {
+      flex: 1;
+    }
+
+    .link-btn .text .label {
+      font-weight: 600;
+    }
+
+    .link-btn .text .sub {
+      font-size: 12px;
+      color: #888;
+      margin-top: 1px;
+    }
+
+    .link-btn .arrow {
+      color: #555;
+      font-size: 18px;
+    }
+
+    /* Icon backgrounds */
+    .icon-email   { background: #333; }
+    .icon-whatsapp { background: #25D366; color: #fff; }
+    .icon-telegram { background: #0088cc; color: #fff; }
+    .icon-mastodon { background: #6364FF; color: #fff; }
+    .icon-facebook { background: #1877F2; color: #fff; }
+    .icon-tiktok   { background: #010101; color: #fff; border: 1px solid #333; }
+    .icon-youtube  { background: #FF0000; color: #fff; }
+    .icon-x        { background: #fff; color: #000; }
+    .icon-bluesky  { background: #0085FF; color: #fff; }
+    .icon-spotify  { background: #1DB954; color: #fff; }
+    .icon-github   { background: #fff; color: #000; }
+    .icon-kofi     { background: #FF5E5B; color: #fff; }
+    .icon-throne   { background: #1a1a1a; color: #fff; border: 1px solid #333; }
+    .icon-amazon   { background: #FF9900; color: #000; }
+    .icon-paypal   { background: #00457C; color: #fff; }
+    .icon-gofundme { background: #00B964; color: #fff; }
+    .icon-xmr      { background: #FF6600; color: #fff; }
+
+    .divider {
+      height: 1px;
+      background: #222;
+      margin: 32px 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="profile">
+      <div class="avatar">K</div>
+      <h1>Kim Erwin Calingacion</h1>
+      <p>@kierbica</p>
+    </div>
+
+    <div class="section-label">Socials</div>
+    <div class="link-list">
+      <a class="link-btn" href="mailto:kierbica@gmail.com">
+        <span class="icon icon-email">✉</span>
+        <span class="text"><span class="label">Email</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://www.facebook.com/kierbica">
+        <span class="icon icon-facebook">f</span>
+        <span class="text"><span class="label">Facebook</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://www.tiktok.com/@kierbica">
+        <span class="icon icon-tiktok">♪</span>
+        <span class="text"><span class="label">TikTok</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://www.youtube.com/@kierbica">
+        <span class="icon icon-youtube">▶</span>
+        <span class="text"><span class="label">YouTube</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://x.com/kierbica">
+        <span class="icon icon-x">𝕏</span>
+        <span class="text"><span class="label">X (Twitter)</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://bsky.app/profile/kierbica.bsky.social">
+        <span class="icon icon-bluesky">🦋</span>
+        <span class="text"><span class="label">Bluesky</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://mastodon.world/@kierwin">
+        <span class="icon icon-mastodon">M</span>
+        <span class="text"><span class="label">Mastodon</span><br><span class="sub">@kierwin@mastodon.world</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://open.spotify.com/user/kierbica">
+        <span class="icon icon-spotify">♫</span>
+        <span class="text"><span class="label">Spotify</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://github.com/kierbica">
+        <span class="icon icon-github">⌨</span>
+        <span class="text"><span class="label">GitHub</span></span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Support &amp; Donations</div>
+    <div class="link-list">
+      <a class="link-btn" href="https://gogetfunding.com/urgent-help-needed-fighting-multiple-untreated-conditions/">
+        <span class="icon icon-gofundme">♥</span>
+        <span class="text"><span class="label">Why I'm Asking for Donations</span><br><span class="sub">GoFundMe</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://ko-fi.com/kierbica">
+        <span class="icon icon-kofi">☕</span>
+        <span class="text"><span class="label">Ko-Fi</span><br><span class="sub">Buy me a coffee</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://throne.com/kierbica">
+        <span class="icon icon-throne">🎁</span>
+        <span class="text"><span class="label">Throne Wishlist</span><br><span class="sub">Send a gift</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://www.amazon.com/hz/wishlist/ls/1CJ2LTOEEIQ17?ref_=wl_share">
+        <span class="icon icon-amazon">📦</span>
+        <span class="text"><span class="label">Amazon Wishlist</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://www.paypal.me/kierbica8597">
+        <span class="icon icon-paypal">P</span>
+        <span class="text"><span class="label">PayPal</span><br><span class="sub">paypal.me/kierbica8597</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://trocador.app/anonpay?ticker_to=xmr&network_to=Mainnet&address=42pAQ5Y2oyVcxC4aJz2M1tF3SMKNmUFZEFichHeiDiDkAjnUjnf3DLVfe122eCsRKSZ2AGxJT9q6GAWnEp3bMxjGJp4vH7k&ref=sqKNYGZbRl&direct=True&name=kimerwinbc">
+        <span class="icon icon-xmr">X</span>
+        <span class="text"><span class="label">Monero (XMR)</span><br><span class="sub">Crypto donations</span></span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Other Accounts I Manage</div>
+    <div class="link-list">
+      <a class="link-btn" href="https://mastodon.social/@catholicshares">
+        <span class="icon icon-mastodon">M</span>
+        <span class="text"><span class="label">@catholicshares</span><br><span class="sub">Mastodon</span></span>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-btn" href="https://mastodon.world/@kierwin">
+        <span class="icon icon-mastodon">M</span>
+        <span class="text"><span class="label">@kierwin</span><br><span class="sub">Mastodon</span></span>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+
+    <footer>
+      Built with <a href="https://pages.github.com">GitHub Pages</a>
+    </footer>
+
+  </div>
+</body>
+</html>
