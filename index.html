@@ -129,30 +129,27 @@
             margin-bottom: 14px; padding-left: 4px;
         }
 
-        /* ═══ Social Icons Grid ═══ */
+        /* ═══ Social Icons — Linktree-style small circles ═══ */
         .social-grid {
-            display: grid; grid-template-columns: repeat(5, 1fr);
-            gap: 10px; margin-bottom: 36px;
+            display: flex; justify-content: center; flex-wrap: wrap;
+            gap: 12px; margin-bottom: 36px;
         }
 
         .social-icon {
-            aspect-ratio: 1; border-radius: 16px;
-            background: var(--card);
-            border: 1.5px solid var(--border);
+            width: 36px; height: 36px; border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            text-decoration: none; color: var(--text);
+            text-decoration: none;
             transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: var(--shadow);
+            color: var(--text-dim);
         }
 
         .social-icon:hover {
-            transform: translateY(-4px) scale(1.08);
-            box-shadow: var(--shadow-hover);
-            border-color: rgba(244,132,95,0.2);
+            transform: translateY(-3px) scale(1.15);
+            color: var(--accent);
         }
 
         .social-icon:active {
-            transform: translateY(-1px) scale(1.02);
+            transform: translateY(-1px) scale(1.05);
         }
 
         .social-icon svg { width: 20px; height: 20px; }
